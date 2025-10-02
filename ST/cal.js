@@ -5,9 +5,9 @@ function calculateGrade() {
   const finalExam = Number(document.getElementById("finalExam").value);
 
   const testAverage = (test1 + test2) / 2;
-  const finalGrade = testAverage * 0.4 + finalExam * 0.6;
+  const finalGrade = testAverage * 0.4 + finalExam * 0.8;
 
-  const passed = finalGrade >= 70;
+  const passed = finalGrade >= 50;
 
   const excellent = passed && finalExam > 80;
 
